@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="connexion.css">
+</head>
+<body>
+    <div class="container">
+        <form action="connexion.html" method="POST">
+          <div class="row">
+            <div class="col-25">
+              <label for="login">Login</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="login" name="login" placeholder="Votre Login.." required >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="password">Password</label>
+            </div>
+            <div class="col-75">
+              <input type="password" id="password" name="password" placeholder="Votre password.." required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="Re_password">Répéter Password</label>
+            </div>
+            <div class="col-75">
+                <input type="password" id="re_password" name="re_password" placeholder="De nouveau, votre password.." required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="naissance">Date de Naissance</label>
+            </div>
+            <div class="col-75">
+                <input type="date" id="naissance" name="naissance" placeholder="Votre date de naissance.." required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="nom">Nom</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="nom" name="nom" placeholder="Votre nom..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="prenom">Prénom</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Email</label>
+            </div>
+            <div class="col-75">
+                <input type="email" id="email" name="email" placeholder="Votre email.." required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="sexe">Sexe</label>
+            </div>
+            <div class="col-75">
+                <input type="radio" id="sexe" name="sexe" value="Masculin" placeholder="Masculin">
+                <input type="radio" id="sexe" name="sexe" value="Féminin" placeholder="Féminin">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="etude">Niveau Etudes</label>
+            </div>
+            <div class="col-75">
+              <select id="etude" name="etude" required>
+                <option value="brevet">Brevet des colléges</option>
+                <option value="bac">Baccalauréat</option>
+                <option value="licence">Licence</option>
+                <option value="master1">Master 1</option>
+                <option value="master2">Master 2</option>
+                <option value="ing_com">Ecole Ingénieur / Commerce</option>
+                <option value="doc">Doctorat</option>
+
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="phone">Téléphone</label>
+            </div>
+            <div class="col-75">
+                <input type="number" id="phone" name="phone" placeholder="Votre téléphone..">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Texte de présentation</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Texte de présentation.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="hobby">Hobbies</label>
+            </div>
+            <div class="col-75">
+                <input type="checkbox" id="sports" name="sports" value="sports">
+                <input type="checkbox" id="livres" name="livres" value="livres">
+                <input type="checkbox" id="promenades" name="promenades" value="promenades">
+                <input type="checkbox" id="musique" name="musique" value="musique">
+                <input type="checkbox" id="cuisine" name="cuisine" value="cuisine">
+                <input type="checkbox" id="voyages" name="voyages" value="voyages">
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    <!--
+    login -obligatoire
+    Mot de passe -oblig
+    confirmation Mot de Passe -obli
+    date de naissance formatée
+    nom
+    prénom
+    adresse email oblig et formatée
+    sexe oblig choix homme femme
+    niveau d'études obliga / liste
+    numéro de tel
+    text de présentation
+    choix multiples de hobbies
+    Bouton validation qui raméne sur page de connexion
+
+    tous les champs avec labels
+    
+    -->
+</body>
+</html>
