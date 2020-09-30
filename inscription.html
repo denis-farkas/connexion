@@ -8,95 +8,99 @@
     <link rel="stylesheet" href="connexion.css">
 </head>
 <body>
+  <header class="menu">
+            <ul class="top_nav">
+              <li><a href="connexion.html">Connexion</a></li>
+              <li><a href="inscription.html">Inscription</a></li>
+              <li><a href="motdepasse.html">Renouveler Mot de Passe</a></li>
+            </ul>
+         
+            <p>Vendredi, 02 Octobre, 2020</p>
+          </header>
+        
+   
+    <div class="add_banner"><a href="#"><img src="members_webbanner.jpg" alt=""></a>
+    </div>
+  
+<br />
+  
   <div class="form-style-10">
     <h1>Inscrivez-vous!<span>Inscrivez-vous et donnez-nous quelques informations sur vous</span></h1>
     <form>
         <form action="connexion.html" method="POST">
         
-          <div class="section"><span>1</span>First Name & Address</div>
+          <div class="section"><span>1</span>Login & Password</div>
           <div class="inner-wrap">
-              <label>Your Full Name <input type="text" name="field1" /></label>
-              <label>Address <textarea name="field2"></textarea></label>
+              <label>Login <input type="text" name="login" required/></label>
+              <label>Password <input type="password" name="password" required /></label>
+              <label>Confirmer Password <input type="re_password" name="re_password" required /></label>
+          </div>
+
+          <div class="section"><span>2</span>Etat Civil</div>
+          <div class="inner-wrap">
+            <label>Nom <input type="text" name="login" required /></label>
+            <label>Prénom <input type="password" name="password" required /></label>
+            <label>Date Naissance <input type="date" name="naissance" required /></label>
+            <label>Sexe Masculin<input type="radio" name="sexe" value="masculin" /></label>
+            <label>Sexe Féminin<input type="radio" name="sexe" value="feminin" /></label>
           </div>
       
-          <div class="section"><span>2</span>Email & Phone</div>
+          <div class="section"><span>3</span>Email & Téléphone</div>
           <div class="inner-wrap">
-              <label>Email Address <input type="email" name="field3" /></label>
-              <label>Phone Number <input type="text" name="field4" /></label>
+              <label>Email <input type="email" name="email" /></label>
+              <label>Téléphone<input type="text" name="phone" /></label>
           </div>
-      
-          <div class="section"><span>3</span>Passwords</div>
-              <div class="inner-wrap">
-              <label>Password <input type="password" name="field5" /></label>
-              <label>Confirm Password <input type="password" name="field6" /></label>
+
+          <div class="section"><span>4</span>Présentation</div>
+          <div class="inner-wrap">
+            <label>Niveau d'études
+            <select class="etude" name="etude" required>
+              <option value="brevet">Brevet des colléges</option>
+              <option value="bac">Baccalauréat</option>
+              <option value="licence">Licence</option>
+              <option value="master1">Master 1</option>
+              <option value="master2">Master 2</option>
+              <option value="ing_com">Ecole Ingénieur / Commerce</option>
+              <option value="doc">Doctorat</option>
+            
+            </select></label>
+          
+         
+            <label>Présentation <textarea name="presentation"></textarea></label>
           </div>
+
+          <div class="section"><span>5</span>Hobbies</div>
+          <div class="inner-wrap">
+         
+          sports<input type="checkbox" id="sports" name="sports" value="sports"/>
+          lecture<input type="checkbox" id="livres" name="livres" value="livres"/>
+          promenade<input type="checkbox" id="promenades" name="promenades" value="promenades" />
+          </br>
+          </br>
+          musique<input type="checkbox" id="musique" name="musique" value="musique" />
+          cuisine<input type="checkbox" id="cuisine" name="cuisine" value="cuisine" />
+          voyages<input type="checkbox" id="voyages" name="voyages" value="voyages" />
+          
+          
+          </div>
+
           <div class="button-section">
-           <input type="submit" name="Sign Up" />
-           <span class="privacy-policy">
-           <input type="checkbox" name="field7">You agree to our Terms and Policy. 
-           </span>
+            <input type="submit" name="Sign Up" />
           </div>
       </form>
       </div>
-            </div>
-            <div class="col-75">
-                <input type="radio" id="sexeM" name="sexe" value="Masculin" placeholder="Masculin">
-                <input type="radio" id="sexeF" name="sexe" value="Féminin" placeholder="Féminin">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="etude">Niveau Etudes</label>
-            </div>
-            <div class="col-75">
-              <select id="etude" name="etude" required>
-                <option value="brevet">Brevet des colléges</option>
-                <option value="bac">Baccalauréat</option>
-                <option value="licence">Licence</option>
-                <option value="master1">Master 1</option>
-                <option value="master2">Master 2</option>
-                <option value="ing_com">Ecole Ingénieur / Commerce</option>
-                <option value="doc">Doctorat</option>
-
-              </select>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-25">
-              <label for="phone">Téléphone</label>
-            </div>
-            <div class="col-75">
-                <input type="text" id="phone" name="phone" placeholder="Votre téléphone..">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-25">
-              <label for="subject">Texte de présentation</label>
-            </div>
-            <div class="col-75">
-              <textarea id="subject" name="subject" placeholder="Texte de présentation.." style="height:200px"></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="hobby">Hobbies</label>
-            </div>
-            <div class="col-75">
-                <input type="checkbox" id="sports" name="sports" value="sports">
-                <input type="checkbox" id="livres" name="livres" value="livres">
-                <input type="checkbox" id="promenades" name="promenades" value="promenades">
-                <input type="checkbox" id="musique" name="musique" value="musique">
-                <input type="checkbox" id="cuisine" name="cuisine" value="cuisine">
-                <input type="checkbox" id="voyages" name="voyages" value="voyages">
-            </div>
-          </div>
-          <div class="row">
-            <input type="submit" value="Submit">
-          </div>
-        </form>
-      </div>
+  
+  <footer id="footer">
+    
+      <p class="copyright">Copyright &copy; 2045 <a href="https://www.cloudefar.fr">Cloudefar</a></p>
+    
+  </footer>
+  </body>
+  
+  </html>
+            
+              
+         
     <!--
     login -obligatoire
     Mot de passe -oblig
@@ -115,5 +119,4 @@
     tous les champs avec labels
     
     -->
-</body>
-</html>
+

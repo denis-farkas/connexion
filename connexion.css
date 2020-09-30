@@ -53,6 +53,8 @@
 .form-style-10 input[type="time"],
 .form-style-10 input[type="url"],
 .form-style-10 input[type="password"],
+.form-style-10 input[type="check"],
+.form-style-10 input[type="re_password"],
 .form-style-10 textarea,
 .form-style-10 select {
 	display: block;
@@ -111,11 +113,85 @@
 	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
 	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
 }
-.form-style-10 .privacy-policy{
-	float: right;
-	width: 250px;
-	font: 12px Arial, Helvetica, sans-serif;
-	color: #4D4D4D;
-	margin-top: 10px;
-	text-align: right;
+
+
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	background: rgb(2, 0, 36);
+	background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(50, 77, 168, 1) 34%, rgba(72, 160, 195, 1) 100%);
+	color: white;
+	padding-right: 20px;
+}
+
+@media screen and (max-width: 800px) {
+	.menu {
+		justify-content: space-between;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.menu {
+		flex-direction: column;
+	}
+}
+
+
+
+.top_nav {
+	text-align: left
+}
+
+.top_nav li {
+	display: inline
+}
+
+.top_nav li a {
+	display: inline;
+	
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 20px 15px;
+	text-transform: uppercase;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s
+}
+
+.top_nav li a:hover {
+	background-color: #2ea9e2
+}
+
+
+.add_banner {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.add_banner img {
+	width: 100%;
+	height: auto;
+}
+
+
+#footer {
+	display: flex;
+	width: 100%;
+	padding: 10px;
+	background-color: #2ea9e2;
+	color: #ccc
+	}
+
+.copyright {
+	float: left;
+	width: 50%;
+	padding-top: 5px;
+	padding-right: 5px;
+	text-align: left
+}
+
+.copyright a {
+	color: white;
 }
