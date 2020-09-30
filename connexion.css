@@ -14,10 +14,32 @@
     border-radius: 4px;
     resize: vertical;
   }
+
+  input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
   
   label {
-    padding: 1px 12px 12px 0;
+    padding: 12px 12px 12px 0;
     display: inline-block;
+    background-color: rgba(27, 105, 206, 0.616);
+    border: bisque;
+    border-radius: 4px;
+    width:200px;
+    
   }
   
   input[type=submit] {
@@ -46,6 +68,7 @@
     float: left;
     width: 25%;
     margin-top: 6px;
+    text-align: center;
   }
   
   .col-75 {
