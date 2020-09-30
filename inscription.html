@@ -4,70 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
+    <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="connexion.css">
 </head>
 <body>
-    <div class="container">
+  <div class="form-style-10">
+    <h1>Inscrivez-vous!<span>Inscrivez-vous et donnez-nous quelques informations sur vous</span></h1>
+    <form>
         <form action="connexion.html" method="POST">
-          <div class="row">
-            <div class="col-25">
-              <label for="login">Login</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="login" name="login" placeholder="Votre Login.." required >
-            </div>
+        
+          <div class="section"><span>1</span>First Name & Address</div>
+          <div class="inner-wrap">
+              <label>Your Full Name <input type="text" name="field1" /></label>
+              <label>Address <textarea name="field2"></textarea></label>
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="password">Password</label>
-            </div>
-            <div class="col-75">
-              <input type="password" id="password" name="password" placeholder="Votre password.." required>
-            </div>
+      
+          <div class="section"><span>2</span>Email & Phone</div>
+          <div class="inner-wrap">
+              <label>Email Address <input type="email" name="field3" /></label>
+              <label>Phone Number <input type="text" name="field4" /></label>
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="Re_password">Répéter Password</label>
-            </div>
-            <div class="col-75">
-                <input type="password" id="re_password" name="re_password" placeholder="De nouveau, votre password.." required>
-            </div>
+      
+          <div class="section"><span>3</span>Passwords</div>
+              <div class="inner-wrap">
+              <label>Password <input type="password" name="field5" /></label>
+              <label>Confirm Password <input type="password" name="field6" /></label>
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="naissance">Date de Naissance</label>
-            </div>
-            <div class="col-75">
-                <input type="date" id="naissance" name="naissance" placeholder="Votre date de naissance.." required>
-            </div>
+          <div class="button-section">
+           <input type="submit" name="Sign Up" />
+           <span class="privacy-policy">
+           <input type="checkbox" name="field7">You agree to our Terms and Policy. 
+           </span>
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="nom">Nom</label>
-            </div>
-            <div class="col-75">
-                <input type="text" id="nom" name="nom" placeholder="Votre nom..">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="prenom">Prénom</label>
-            </div>
-            <div class="col-75">
-                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom..">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="email">Email</label>
-            </div>
-            <div class="col-75">
-                <input type="email" id="email" name="email" placeholder="Votre email.." required>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="sexe">Sexe</label>
+      </form>
+      </div>
             </div>
             <div class="col-75">
                 <input type="radio" id="sexeM" name="sexe" value="Masculin" placeholder="Masculin">
