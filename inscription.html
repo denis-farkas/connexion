@@ -31,30 +31,30 @@
         
           <div class="section"><span>1</span>Login & Password</div>
           <div class="inner-wrap">
-              <label>Login <input type="text" name="login" required/></label>
-              <label>Password <input type="password" name="password" required /></label>
-              <label>Confirmer Password <input type="re_password" name="re_password" required /></label>
+              <label for="login">Login <input type="text" id="login" name="login" required/></label>
+              <label for="password">Password <input type="password" id="password" name="password" required /></label>
+              <label for="re_password">Confirmer Password <input type="password" id="re_password" name="re_password" required /></label>
           </div>
 
           <div class="section"><span>2</span>Etat Civil</div>
           <div class="inner-wrap">
-            <label>Nom <input type="text" name="login" required /></label>
-            <label>Prénom <input type="password" name="password" required /></label>
-            <label>Date Naissance <input type="date" name="naissance" required /></label>
-            <label>Sexe Masculin<input type="radio" name="sexe" value="masculin" /></label>
-            <label>Sexe Féminin<input type="radio" name="sexe" value="feminin" /></label>
+            <label for="nom">Nom <input type="text" id="nom" name="nom" required /></label>
+            <label for="prenom">Prénom <input type="text" id="prenom" name="prenom" required /></label>
+            <label for="naissance">Date Naissance <input type="date" id="naisance" name="naissance" required /></label>
+            <label for="masculin">Sexe Masculin<input type="radio" id="masculin" name="sexe" value="masculin" /></label>
+            <label for="feminin">Sexe Féminin<input type="radio" id="feminin" name="sexe" value="feminin" /></label>
           </div>
       
           <div class="section"><span>3</span>Email & Téléphone</div>
           <div class="inner-wrap">
-              <label>Email <input type="email" name="email" /></label>
-              <label>Téléphone<input type="text" name="phone" /></label>
+              <label for="email">Email <input type="email" id="email" name="email" /></label>
+              <label for="phone">Téléphone<input type="tel" id="phone" name="phone" /></label>
           </div>
 
           <div class="section"><span>4</span>Présentation</div>
           <div class="inner-wrap">
-            <label>Niveau d'études
-            <select class="etude" name="etude" required>
+            <label for="etude">Niveau d'études
+            <select class="etude" id="etude" name="etude" required>
               <option value="brevet">Brevet des colléges</option>
               <option value="bac">Baccalauréat</option>
               <option value="licence">Licence</option>
@@ -66,7 +66,7 @@
             </select></label>
           
          
-            <label>Présentation <textarea name="presentation"></textarea></label>
+            <label for="presentation">Présentation <textarea id="presentation" name="presentation"></textarea></label>
           </div>
 
           <div class="section"><span>5</span>Hobbies</div>
@@ -98,25 +98,4 @@
   </body>
   
   </html>
-            
-              
-         
-    <!--
-    login -obligatoire
-    Mot de passe -oblig
-    confirmation Mot de Passe -obli
-    date de naissance formatée
-    nom
-    prénom
-    adresse email oblig et formatée
-    sexe oblig choix homme femme
-    niveau d'études obliga / liste
-    numéro de tel
-    text de présentation
-    choix multiples de hobbies
-    Bouton validation qui raméne sur page de connexion
-
-    tous les champs avec labels
-    
-    -->
 
